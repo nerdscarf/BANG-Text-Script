@@ -22,9 +22,9 @@ total_return = round(bb + amc + nok + gme, 2)
 
 ## Texts you using your Twilio number
     client.messages.create(
-        to="[YOUR CELL PHONE NUMBER]",
+        to="[YOUR CELLPHONE NUMBER]",
         from_="[YOUR TWILIO NUMBER]",
-        body="Your current total return is {}. Hold. Diamond hands. You can do this.".format(total_return)
+        body="Your current total return is {}.".format(total_return)
 )
 
 # Schedules when the function executes
@@ -33,7 +33,3 @@ schedule.every().hour.at(":15").do(text)
 while True:
     schedule.run_pending()
     time.sleep(1)
-
-
-## "Here are the current stock prices: BB {}, AMC {}, NOK {}, GME {}. Hold. Diamond hands.".format(bb,amc,nok,gme)
-## round(yfsi.get_live_price("BB"), 2)
