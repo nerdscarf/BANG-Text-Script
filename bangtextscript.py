@@ -4,7 +4,7 @@ import time
 from twilio.rest import Client
 import yahoo_fin.stock_info as yfsi
 
-## Twilio account authentificaiton
+## Twilio account authentication
 account_sid = '[TWILIO_ACCOUNT_SID]'
 auth_token = '[TWILIO_AUTH_TOKEN]'
 

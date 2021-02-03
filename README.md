@@ -1,7 +1,7 @@
 # $BANG Stock Text Updates
 
 ## Description
-This project is simple python script that will text you the estimated total return of your shares in Blackberry ($BB), AMC ($AMC), Nokia ($NOK), and Gameshop ($GME). I created this because I didn't want to spend all day tied to the news or a brokerage account waiting for updates on a single stock. This script will take the live value of each stock, multiply it by the number of shares you own, combine those values and text them to you once an hour.  
+This project is simple python script that will text you the estimated total return of your shares in Blackberry ($BB), AMC ($AMC), Nokia ($NOK), and Gamestop ($GME). I created this because I didn't want to spend all day tied to the news or a brokerage account waiting for updates on a single stock. This script will take the live value of each stock, multiply it by the number of shares you own, combine those values and text them to you once an hour.  
 	
 	
 ## Technologies
@@ -12,7 +12,7 @@ Project is created with:
 
 
 ## Notes
-This does not take into account your inital investment or options. 
+This is not investment advice. Do you own due diligence and research. This script does not take into account your initial investment or options. 
 
 ## Making it work
 * Create a free Twilio account to obtain your account sid, authentication token and phone number. Replace `[TWILIO_ACCOUNT_SID]`, `[TWILIO_AUTH_TOKEN]`, and `[YOUR TWILIO NUMBER]` with the corresponding information. 
@@ -25,7 +25,7 @@ This does not take into account your inital investment or options.
 
 
 ## Customize The Time
-* [Schedule's](https://schedule.readthedocs.io/en/stable/examples.html) documentation has great exmaple code you can use to customize the timing of your text messages. All you need to do is replace `schedule.every().hour.at(":15").do(text)` on line 31 with your preferred text frequency. Be sure to update the do method with the name of the function `.do(text)`. 
+* [Schedule's](https://schedule.readthedocs.io/en/stable/examples.html) documentation has great example code you can use to customize the timing of your text messages. All you need to do is replace `schedule.every().hour.at(":15").do(text)` on line 31 with your preferred text frequency. Be sure to update the do method with the name of the function `.do(text)`. 
 
 
 ## Deploy
